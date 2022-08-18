@@ -1,4 +1,4 @@
-package _0Mysolution.MyArrayTest;
+package _0Mysolution._2MyArrayTest;
 //에라토스테네스체가 소수찾는데 제일 빠르다.
 import java.util.Scanner;
 

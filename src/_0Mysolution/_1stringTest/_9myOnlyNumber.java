@@ -1,4 +1,4 @@
-package _0Mysolution.stringTest;
+package _0Mysolution._1stringTest;
 //Character.isDigit() = 숫자일 때 true
 //Integer.parseInt();
 import java.util.Scanner;

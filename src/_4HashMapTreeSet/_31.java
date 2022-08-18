@@ -18,11 +18,6 @@ public class _31 {
         answer=x;
       }
     }
-    System.out.println(map);
-    System.out.println(map.containsKey('A'));
-    System.out.println(map.size());
-    System.out.println(map.remove('A'));   // value값을 리턴한다.
-    System.out.println(map.size());
     return answer;
   }
   public static void main(String[] args) {

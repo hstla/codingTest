@@ -1,4 +1,4 @@
-package _0Mysolution.stringTest;
+package _0Mysolution._1stringTest;
 // Character.isAlphabetic 문자를 받고 부울값을 리턴하는 함수 - 알파벳이 맞는지 확인해준다.
 import java.util.Scanner;
 

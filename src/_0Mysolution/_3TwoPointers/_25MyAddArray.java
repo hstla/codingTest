@@ -1,4 +1,4 @@
-package _0Mysolution.TwoPointers;
+package _0Mysolution._3TwoPointers;
 import java.util.ArrayList;
 import java.util.Scanner;
 

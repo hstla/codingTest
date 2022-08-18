@@ -1,4 +1,4 @@
-package _0Mysolution.stringTest;
+package _0Mysolution._1stringTest;
 
 import java.util.ArrayList;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package _0Mysolution.MyArrayTest;
+package _0Mysolution._2MyArrayTest;
 
 import java.util.Scanner;
 

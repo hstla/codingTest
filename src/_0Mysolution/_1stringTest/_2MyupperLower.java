@@ -1,5 +1,5 @@
 /*2. 소문자를 대문자, 대문자를 소문자로 변환하는 문제*/
-package _0Mysolution.stringTest;
+package _0Mysolution._1stringTest;
 
 import java.util.Scanner;
 

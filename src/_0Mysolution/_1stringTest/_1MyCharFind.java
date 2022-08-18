@@ -1,19 +1,20 @@
-package _0Mysolution.stringTest;
-/*1. 한 개의 문자열을 입력받고, 특정 문자를 입력받아
-* 해당 특정 문자가 몇 개 존재하는지 알아내시오.*/
+package _0Mysolution._1stringTest;
 
 import java.util.Scanner;
 public class _1MyCharFind {
+    int i=0;
     public int solution(String str, char t) {
         int answer = 0;
         str=str.toUpperCase();
         t=Character.toUpperCase(t);
         for(char x:str.toCharArray()){
-            if(x==t){
-                answer++;
-            }
+            answer=plusnum(x,t);
         }
         return answer;
+    }
+    public int plusnum(char c,char x){
+        if(c==x){i++;}
+        return i;
     }
 
     public static void main(String[] args) {

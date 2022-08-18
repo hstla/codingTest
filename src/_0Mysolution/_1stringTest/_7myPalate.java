@@ -1,4 +1,4 @@
-package _0Mysolution.stringTest;
+package _0Mysolution._1stringTest;
 // String일때는 equals함수사용하여 확인하기 /equalsIgnoreCase는 대소문자 상관하지 않고 비교한다.
 import java.util.Scanner;
 

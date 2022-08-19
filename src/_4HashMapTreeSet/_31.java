@@ -1,6 +1,5 @@
 package _4HashMapTreeSet;
 
-import java.awt.*;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -14,7 +13,6 @@ public class _31 {
     int max=Integer.MIN_VALUE;
     for(char x:map.keySet()){
       if(max<map.get(x)) {
-        max=map.get(x);
         answer=x;
       }
     }

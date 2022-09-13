@@ -39,6 +39,6 @@ public class _37 {
     _37 T=new _37();
     Scanner scanner=new Scanner(System.in);
     String s= scanner.nextLine();
-    System.out.println(T.solution1(s));
+    System.out.println(T.solution(s));
   }
 }

@@ -1,5 +1,5 @@
 //교육과정설계
-package StackQueue;
+package _5StackQueue;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;

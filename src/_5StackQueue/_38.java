@@ -1,5 +1,5 @@
 // 크레인 인형뽑기
-package StackQueue;
+package _5StackQueue;
 
 import java.util.Scanner;
 import java.util.Stack;

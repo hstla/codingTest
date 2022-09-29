@@ -1,5 +1,5 @@
 // stack의 대표적인 문제
-package StackQueue;
+package _5StackQueue;
 import java.util.HashMap;
 import java.util.Scanner;
 import java.util.Stack;

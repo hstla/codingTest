@@ -1,5 +1,5 @@
 // 후위식 연산 352+*9-
-package StackQueue;
+package _5StackQueue;
 
 import java.util.Scanner;
 import java.util.Stack;

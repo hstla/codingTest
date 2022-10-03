@@ -11,7 +11,7 @@ public class _46 {
         if (arr[j] > tmp) {
           arr[j + 1] = arr[j];
         } else break;
-        arr[j] = tmp;
+        arr[j + 1] = tmp;
       }
     }
     return arr;

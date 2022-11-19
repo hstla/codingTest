@@ -1,12 +1,12 @@
 package programmers.Level1;
-
+// 자릿수 더하기
 public class _12931 {
-  static public int solution (int n) {
+  static public int solution(int n) {
     int answer = 0;
     while (true) {
-      answer += n%10;
-      answer = n/10;
-      if (answer==0) break;
+      answer += n % 10;
+      n = n / 10;
+      if (n == 0) break;
     }
     return answer;
   }

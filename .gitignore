@@ -1,3 +1,5 @@
+# leetcode용 자바파일
+src/Solution.java
 # 디폴트 무시된 파일
 /shelf/
 /workspace.xml
@@ -10,4 +12,4 @@ out/
 codingtest.iml
 .idea/
 .DS_Store*
-Solution
+

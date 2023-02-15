@@ -8,7 +8,7 @@ public class DFS {
 
     public static void dfs(int x) {
         visited[x] = true;
-        System.out.println(x + " ");
+        System.out.printf(x + " ");
         for (int i = 0; i < graph.get(x).size(); i++) {
             int y = graph.get(x).get(i);
             if (!visited[y]) dfs(y);

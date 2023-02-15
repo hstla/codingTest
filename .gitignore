@@ -1,5 +1,5 @@
 # leetcode용 자바파일
-src/solution/
+src/solution/*
 # 디폴트 무시된 파일
 /shelf/
 /workspace.xml

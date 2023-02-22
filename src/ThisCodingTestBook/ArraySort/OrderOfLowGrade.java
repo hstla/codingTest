@@ -1,7 +1,5 @@
 package ThisCodingTestBook.ArraySort;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.*;
 
 
 class Student implements Comparable<Student> {
@@ -31,24 +29,29 @@ class Student implements Comparable<Student> {
 }
 
 public class OrderOfLowGrade {
-    public static String[] solution(int n, Map<String, Integer> dict) {
-        String[] answer = new String[n];
 
-        return answer;
+    public static List<Student> solution(int n, List<Student> students) {
+        Collections.sort(students);
+        return students;
     }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Map<String, Integer> dict = new HashMap<>();
+        List<Student> students = new ArrayList<>();
+
         int n = sc.nextInt();
         for (int i = 0; i < n; i++) {
             String name = sc.next();
-            Integer score = sc.nextInt();
-            dict.put(name, score);
+            int score = sc.nextInt();
+            students.add(new Student(name, score));
         }
 
-        for (String s : solution(n,dict)) System.out.println(s);
+        students = solution(n, students);
 
-        System.out.println(dict.get("이순신"));
+        for (int i = 0; i < students.size(); i++) {
+            System.out.print(students.get(i).getName() + " ");
+        }
+
     }
 }
 

@@ -9,10 +9,11 @@ public class _12ReplaceElements {
         int answer = 0;
         Arrays.sort(arr1);
         Arrays.sort(arr2, Comparator.reverseOrder());
-        for (int i =0;i<k;i++) arr1[i] = arr2[i];
-        for (int i = 0; i<arr1.length;i++) answer += arr1[i];
-    return answer;
+        for (int i = 0; i < k; i++) arr1[i] = arr2[i];
+        for (int i = 0; i < arr1.length; i++) answer += arr1[i];
+        return answer;
     }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
@@ -22,16 +23,14 @@ public class _12ReplaceElements {
         Integer[] arr1 = new Integer[n];
         Integer[] arr2 = new Integer[n];
 
-        for (int i=0;i<n;i++) {
+        for (int i = 0; i < n; i++) {
             int j = sc.nextInt();
             arr1[i] = j;
         }
-        for (int i=0;i<n;i++) {
+        for (int i = 0; i < n; i++) {
             int j = sc.nextInt();
             arr2[i] = j;
         }
-        System.out.println(solution(arr1,arr2,k));
-
-
+        System.out.println(solution(arr1, arr2, k));
     }
 }

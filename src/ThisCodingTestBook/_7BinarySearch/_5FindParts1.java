@@ -15,21 +15,24 @@ public class _5FindParts1 {
         }
         return -1;
     }
+
     public static String[] solution(int n, int[] arr1, int m, int[] arr2) {
         String[] answer = new String[m];
-
-
-
-
+        for (int i = 0; i < m; i++) {
+            int result = binarySearch(arr1, arr2[i], 0, n - 1);
+            if (result != -1) answer[i] = "yes ";
+            else answer[i] = "no ";
+        }
         return answer;
     }
+
     public static void main(String[] args) {
         int n = 5;
         int m = 3;
-        int[] arr1 = {8,3,7,9,2};
-        int[] arr2 = {5,7,9};
+        int[] arr1 = {8, 3, 7, 9, 2};
+        int[] arr2 = {5, 7, 9};
         Arrays.sort(arr1);
         Arrays.sort(arr2);
-        for (String s: solution(n,arr1,m,arr2)) System.out.println(s);
+        for (String s : solution(n, arr1, m, arr2)) System.out.println(s);
     }
 }

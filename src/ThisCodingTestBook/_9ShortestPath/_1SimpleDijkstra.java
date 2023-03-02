@@ -23,7 +23,7 @@ class Node {
 
 public class _1SimpleDijkstra {
 
-    public static final int INF = (int) 1e9; // 무한을 의미하는 값으로 10억을 설정
+    public static final int INF = (int) 1e9;
     public static int n, m, start;
     public static ArrayList<ArrayList<Node>> graph = new ArrayList<ArrayList<Node>>();
     public static boolean[] visited = new boolean[100001];

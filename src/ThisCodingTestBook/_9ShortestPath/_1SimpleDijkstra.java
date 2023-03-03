@@ -1,5 +1,5 @@
 package ThisCodingTestBook._9ShortestPath;
-
+// 간단한 다익스트라
 import java.util.*;
 
 class Node {

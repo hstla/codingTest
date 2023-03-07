@@ -3,8 +3,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 /*
 input
-4
-7
+4 7
 1 2 4
 1 4 6
 2 1 3

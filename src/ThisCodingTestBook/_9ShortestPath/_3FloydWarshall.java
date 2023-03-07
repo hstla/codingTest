@@ -13,7 +13,7 @@ input
 4 3 2
 */
 
-public class FloydWarshall {
+public class _3FloydWarshall {
     public static final int INF = (int) 1e9;
     public static int n, m;
     public static int[][] graph = new int[501][501];

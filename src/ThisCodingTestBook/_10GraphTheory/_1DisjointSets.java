@@ -49,7 +49,7 @@ public class _1DisjointSets {
         System.out.print("부모 테이블: ");
         for (int i = 1;i<=v;i++) System.out.print(parent[i] + " ");
         System.out.println();
-
-
     }
 }
+
+

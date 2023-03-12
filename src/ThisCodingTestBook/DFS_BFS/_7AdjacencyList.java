@@ -42,5 +42,4 @@ public class _7AdjacencyList {
             System.out.println();
         }
     }
-
 }

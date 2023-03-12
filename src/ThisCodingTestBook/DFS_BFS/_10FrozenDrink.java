@@ -22,7 +22,6 @@ public class _10FrozenDrink {
         }
         return false;
     }
-
     public static void main(String[] args) {
         n =4;
         m =5;
@@ -34,7 +33,4 @@ public class _10FrozenDrink {
         }
         System.out.println(result);
     }
-
-
-
 }

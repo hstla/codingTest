@@ -12,6 +12,5 @@ public class _4FibonacciBottomUp {
 
         for (int i = 3; i <= n; i++) d[i] = d[i - 1] + d[i - 2];
         System.out.println(d[n]);
-
     }
 }

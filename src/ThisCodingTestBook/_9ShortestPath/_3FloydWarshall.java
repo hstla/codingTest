@@ -1,9 +1,10 @@
 package ThisCodingTestBook._9ShortestPath;
+
 import java.util.Arrays;
 import java.util.Scanner;
 /*
 input
-4 7
+4
 1 2 4
 1 4 6
 2 1 3
@@ -23,7 +24,7 @@ public class _3FloydWarshall {
         n = sc.nextInt();
         m = sc.nextInt();
 
-        for (int i =0;i<501;i++) {
+        for (int i = 0; i < 501; i++) {
             Arrays.fill(graph[i], INF);
         }
 
@@ -49,6 +50,11 @@ public class _3FloydWarshall {
                 else System.out.println(graph[a][b] + " ");
             }
         }
+
+
+
+
+
     }
 }
 

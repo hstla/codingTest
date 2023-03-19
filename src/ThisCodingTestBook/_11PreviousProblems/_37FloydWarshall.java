@@ -46,7 +46,7 @@ public class _37FloydWarshall {
             if (c < graph[a][b]) graph[a][b] = c;
         }
 
-        for (int k = 1; k <= n; k++) {
+        for (int k = 1;  k <= n; k++) {
             for (int a = 1; a <= n; a++) {
                 for (int b = 1; b <= n; b++) {
                     graph[a][b] = Math.min(graph[a][b], graph[a][k] + graph[k][b]);

@@ -8,28 +8,29 @@ public class _12951 {
     static public String solution(String s) {
         String answer = "";
         String[] tmp = s.toLowerCase().split(" ");
-        for (int i =0;i< tmp.length;i++) {
+        for (int i = 0; i < tmp.length; i++) {
             String str = tmp[i];
-            if (!str.equals("")){
+            if (!str.equals("")) {
                 str = String.valueOf(str.charAt(0)).toUpperCase() + str.substring(1);
             }
             answer += str + " ";
         }
-        if (s.charAt(s.length()-1) != ' ') answer = answer.trim();
+        if (s.charAt(s.length() - 1) != ' ') answer = answer.trim();
         return answer;
     }
+
     public String solution1(String s) {
         String[] split = s.split(" ");
         String answer = "";
-        for(int i=0; i<split.length; i++) {
+        for (int i = 0; i < split.length; i++) {
             String str = split[i].toLowerCase();
-            if(!str.equals("")) {
+            if (!str.equals("")) {
                 str = String.valueOf(str.charAt(0)).toUpperCase() + str.substring(1);
             }
             answer += str + " ";
         }
 
-        if(s.charAt(s.length()-1) != ' ') {
+        if (s.charAt(s.length() - 1) != ' ') {
             answer = answer.trim();
         }
 

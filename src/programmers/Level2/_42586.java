@@ -40,7 +40,7 @@ public class _42586 {
             int days = (int) Math.ceil((100 - progresses[i]) / (double) speeds[i]); // 각 기능이 완료되는데 걸리는 일 수 계산
             q.offer(days);
         }
-        System.out.println(q);
+
         int prev = q.poll();
         int cnt = 1;
         while (!q.isEmpty()) {

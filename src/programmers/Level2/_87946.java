@@ -1,11 +1,26 @@
 package programmers.Level2;
+
 // 피로도
 // 순열 알고리즘
 public class _87946 {
-    static public int solution(int k, int[][] dungeons) {
-        int answer = -1;
+    static public boolean check[];
+    static public int max = 0;
 
-        return answer;
+    static public int solution(int k, int[][] dungeons) {
+        check = new boolean[dungeons.length];
+        dfs(k, dungeons, 0);
+        return max;
+    }
+
+    public static void dfs(int tired, int[][] dungeons, int cnt) {
+        for (int i = 0; i < dungeons.length; i++) {
+            if (!check[i] && tired >= dungeons[i][0]) {
+                check[i] = true;
+                dfs(tired - dungeons[i][1], dungeons, cnt + 1);
+                check[i] = false;
+            }
+        }
+        max = (max > cnt) ? max : cnt;
     }
 
     public static void main(String[] args) {
@@ -15,10 +30,6 @@ public class _87946 {
                 {30, 10}
         };
         System.out.println(solution(80, arr));
-
-
-        int a = 5;
-        int b = 4;
-        int c = (a > b) ? a : b;
     }
+
 }

@@ -1,16 +1,8 @@
 package inflearnLecture._7RecursiveTreeGraph;
 
-class Node {
-    int date;
-    Node lt, rt;
-    public Node(int val) {
-        date = val;
-        lt=rt=null;
-    }
-
-}
 public class _DFS {
     Node root;
+
     public void dfs(Node root) {
         if (root == null) return;
         else {
@@ -24,6 +16,7 @@ public class _DFS {
 //            System.out.printf(root.date + " ");
         }
     }
+
     public static void main(String[] args) {
         _DFS tree = new _DFS();
         tree.root = new Node(1);
@@ -34,5 +27,15 @@ public class _DFS {
         tree.root.rt.lt = new Node(6);
         tree.root.rt.rt = new Node(7);
         tree.dfs(tree.root);
+    }
+}
+
+class Node {
+    int date;
+    Node lt, rt;
+
+    public Node(int val) {
+        date = val;
+        lt = rt = null;
     }
 }

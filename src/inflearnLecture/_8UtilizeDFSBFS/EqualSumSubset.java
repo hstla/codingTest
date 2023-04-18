@@ -15,10 +15,11 @@ public class EqualSumSubset {
         if (check) return;
         if (total / 2 < sum) return;
         if (l == n) {
-            if (total / 2 == sum) {
+            if (total - sum == sum) {
                 check = true;
             }
-        } else {
+        }
+        else {
             dfs(l + 1, sum + arr[l], arr);
             dfs(l + 1, sum, arr);
         }

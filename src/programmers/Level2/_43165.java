@@ -12,7 +12,6 @@ public class _43165 {
     static void dfs(int n, int sum, int[] numbers, int target) {
         if (n == numbers.length) {
             if (sum == target) answer++;
-            return;
         } else {
             dfs(n + 1, sum + numbers[n], numbers, target);
             dfs(n + 1, sum - numbers[n], numbers, target);

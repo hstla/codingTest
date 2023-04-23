@@ -10,10 +10,10 @@ public class _DFS {
 //            System.out.printf(root.date + " ");
             dfs(root.lt);
             // 중위 순회
-            System.out.printf(root.date + " ");
+//            System.out.printf(root.date + " ");
             dfs(root.rt);
             // 후위 순회
-//            System.out.printf(root.date + " ");
+            System.out.printf(root.date + " ");
         }
     }
 

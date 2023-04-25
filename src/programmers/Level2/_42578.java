@@ -1,5 +1,5 @@
 package programmers.Level2;
-import java.util.HashMap;
+import java.util.*;
 
 // 위장
 public class _42578 {
@@ -22,4 +22,3 @@ public class _42578 {
         System.out.println(solution(clothes));
     }
 }
-

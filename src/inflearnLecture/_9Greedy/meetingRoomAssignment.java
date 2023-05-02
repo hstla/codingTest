@@ -1,4 +1,4 @@
-package inflearnLecture.Greedy;
+package inflearnLecture._9Greedy;
 
 import java.util.*;
 /*

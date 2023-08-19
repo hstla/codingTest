@@ -41,7 +41,7 @@ public class Main {
 
     }
 
-    public static void change(int i) {
+    public static void toggleLight(int i) {
         if (light[i] == 1) {
             light[i] = 0;
         } else {
@@ -53,19 +53,19 @@ public class Main {
         int num = student[i][1];
         for (int j = num; j < light.length; j++) {
             if (j % num == 0) {
-                change(j);
+                toggleLight(j);
             }
         }
     }
 
     private static void women(int i) {
         int num = student[i][1];
-        change(num);
+        toggleLight(num);
         int n = 1;
         while ((num - n) > 0 && (num + n) < light.length) {
             if (light[num - n] == light[num + n]) {
-                change(num - n);
-                change(num + n);
+                toggleLight(num - n);
+                toggleLight(num + n);
                 n++;
             } else {
                 break;

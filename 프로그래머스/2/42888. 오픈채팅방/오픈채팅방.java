@@ -1,31 +1,30 @@
 import java.util.*;
 
 class Solution {
-    
-    public static Map<String, String> nameMap = new HashMap();
-    
     public List<String> solution(String[] record) {
-        for (int i = 0;i < record.length;i++) {
-            String[] tmp = record[i].split(" ");
-            if (tmp.length == 3) {
-                nameMap.put(tmp[1], tmp[2]);    
+       
+        Map<String, String> map = new HashMap<>();
+        ArrayList<String> answer = new ArrayList<>();
+               
+        for(int i = 0; i<record.length; i++){
+                String[] spt=record[i].split(" ");
+            if (!"Leave".equals(spt[0])) {
+                map.put(spt[1], spt[2]);
             }
-        }
-        // System.out.println(nameMap.get("uid4567"));
+        }    
         
-        List<String> answer = new ArrayList<>();
-        for (int i = 0;i < record.length;i++) {
-            String[] tmp = record[i].split(" ");
-            if ("Enter".equals(tmp[0])) {
-                answer.add(nameMap.get(tmp[1])+"님이 들어왔습니다.");
+        for (int i =0;i<record.length;i++) {
+            String[] spt=record[i].split(" ");
+                        switch(spt[0]){
+                case "Enter":
+                    answer.add(map.get(spt[1])+"님이 들어왔습니다.");
+                break;
+          
+                case "Leave":
+                    answer.add(map.get(spt[1])+"님이 나갔습니다.");
+                break;
             }
-            if ("Leave".equals(tmp[0])) {
-                answer.add(nameMap.get(tmp[1])+"님이 나갔습니다.");
-            }
-        }
-        // for (String s : answer) {
-        //     System.out.println(s);
-        // }
+        }  
         return answer;
     }
 }

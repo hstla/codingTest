@@ -13,4 +13,4 @@ codingtest.iml
 .idea/
 .DS_Store*
 강의자료/*
-!/src/코테회사/
+src/코테회사/
